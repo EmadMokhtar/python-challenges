@@ -18,7 +18,7 @@ class QueryBoard():
 	def query_row(self, row):
 		return sum([self.board[row][col] for col in range(256)])
 
-with open('test_file.txt') as test_file:
+with open('test_file.txt', 'r') as test_file:
 	board = QueryBoard()
 	for line in test_file:
 		paramters = line.strip().split()
